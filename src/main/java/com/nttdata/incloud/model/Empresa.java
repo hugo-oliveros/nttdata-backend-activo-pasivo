@@ -6,6 +6,19 @@ import javax.validation.constraints.Size;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+@Builder
 @Document(collection = "empresa")
 public class Empresa {
 
@@ -19,38 +32,5 @@ public class Empresa {
 	private String nombre;
 
 	private String direccion;
-
-	public Empresa() {
-	}
-
-	public Empresa(Long id, String nombre, String direccion) {
-		this.id = id;
-		this.nombre = nombre;
-		this.direccion = direccion;
-	}
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
-	public String getDireccion() {
-		return direccion;
-	}
-
-	public void setDireccion(String direccion) {
-		this.direccion = direccion;
-	}
 
 }

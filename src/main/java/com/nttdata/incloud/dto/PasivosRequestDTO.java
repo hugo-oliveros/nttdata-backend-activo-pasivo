@@ -17,12 +17,7 @@ import lombok.ToString;
 @Builder
 public class PasivosRequestDTO {
 
-	@Getter
-	@Setter
 	public String nombre;
-	
-	@Getter
-	@Setter
 	public Empresa empresa;
 
 }

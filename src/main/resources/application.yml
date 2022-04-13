@@ -1,0 +1,8 @@
+spring:
+  application:
+    name:ActivoPasivo
+  cloud:
+    config:
+      uri:http://localhost:1000
+      username:root
+      password:root

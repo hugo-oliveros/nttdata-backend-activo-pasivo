@@ -1,7 +1,5 @@
-package com.nttdata.incloud.controller;
+package com.nttdata.incloud.controllers;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,8 +16,6 @@ import io.swagger.annotations.Api;
 @CrossOrigin("*")
 @Api(tags = "Rest de ConsumoMovimientoService", description = "Api Rest que permite hacer CRUD a la tabla de ConsumoMovimientoService.")
 public class ConsumoMovimientosController extends CustomRest<ConsumoMovimientoService, ConsumoMovimiento> {
-
-	private static final Logger logger = LoggerFactory.getLogger(ConsumoMovimientosController.class);
 
 	@Autowired
 	private ConsumoMovimientoService repository;

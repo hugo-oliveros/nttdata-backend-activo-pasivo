@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-
 @Getter
 @Setter
 @NoArgsConstructor
@@ -18,12 +17,7 @@ import lombok.ToString;
 @Builder
 public class ActivosRequestDTO {
 
-	@Getter
-	@Setter
 	public String nombre;
-	
-	@Getter
-	@Setter
 	public Empresa empresa;
 
 }

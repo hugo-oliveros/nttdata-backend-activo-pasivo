@@ -1,7 +1,5 @@
-package com.nttdata.incloud.controller;
+package com.nttdata.incloud.controllers;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,8 +15,6 @@ import io.swagger.annotations.Api;
 @CrossOrigin("*")
 @Api(tags = "Rest de Persona", description = "Api Rest que permite hacer CRUD a la tabla de Persona.")
 public class PersonaController extends CustomRest<PersonaService, Persona> {
-
-	private static final Logger logger = LoggerFactory.getLogger(PersonaController.class);
 
 	@Override
 	protected PersonaService createInstance() {

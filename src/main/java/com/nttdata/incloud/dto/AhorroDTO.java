@@ -18,10 +18,7 @@ import lombok.ToString;
 @Builder
 public class AhorroDTO {
 
-
 	public Persona persona;
-
 	public ConsumoMovimiento consumoMovimiento;
-
 
 }

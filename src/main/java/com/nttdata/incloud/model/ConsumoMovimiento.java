@@ -5,6 +5,19 @@ import javax.validation.constraints.NotBlank;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+@Builder
 @Document(collection = "consumoMovimiento")
 public class ConsumoMovimiento {
 
@@ -24,57 +37,5 @@ public class ConsumoMovimiento {
 
 	@NotBlank
 	private String hora;
-
-	public ConsumoMovimiento() {
-	}
-
-	public ConsumoMovimiento(Long id, @NotBlank int moviento, @NotBlank Long idpersona, @NotBlank String tipo,
-			@NotBlank String hora) {
-		this.id = id;
-		this.moviento = moviento;
-		this.idpersona = idpersona;
-		this.tipo = tipo;
-		this.hora = hora;
-	}
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public int getMoviento() {
-		return moviento;
-	}
-
-	public void setMoviento(int moviento) {
-		this.moviento = moviento;
-	}
-
-	public Long getIdpersona() {
-		return idpersona;
-	}
-
-	public void setIdpersona(Long idpersona) {
-		this.idpersona = idpersona;
-	}
-
-	public String getTipo() {
-		return tipo;
-	}
-
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
-	}
-
-	public String getHora() {
-		return hora;
-	}
-
-	public void setHora(String hora) {
-		this.hora = hora;
-	}
 
 }
